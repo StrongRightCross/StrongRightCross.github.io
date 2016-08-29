@@ -1,0 +1,155 @@
+<html>
+	
+	<head>
+		
+		<title>Some Basics</title>
+		
+		<link href = "temp2.css" rel = "stylesheet" type = "text/css"> 
+		
+	</head>
+	
+	<body>
+	
+		<header></header>
+		<section id = "block1"></section>
+		<section id = "block2"></section>
+		
+		<h1>CSS</h1>
+		<h2>Some Basics</h2>
+		
+		<article>
+			<p>
+				While Html is used for creating the structure of a webpage,
+				CSS is used to control its look. The browser will go through 
+				each line of text in the html file and create the objects on 
+				the page one at a time in order. It looks however to the CSS 
+				code to see if the web page designer chose to modify each object's
+				appearance in some way. 
+			</p>
+				
+			<p>
+				To give an example, html uses the p tag to create a paragraph. 
+				The p tag has an openning tag and a closing tag. The designer 
+				simply writes the tags and then the paragraph's text in between 
+				them. The browser makes the page from top to bottom looking at 
+				the html code. The starting position of the paragraph will be 
+				contingent on everything that preceeded it. Tags like the p 
+				tag are considered block tags meaning they normally are 
+				seperated from other block tags by a line of space. 
+			</p>
+			
+			<p>
+				However, we can modify where this paragraph will appear on the 
+				screen as well as what color the text will be, what font it 
+				will be, and its size. We do this with CSS. When the browser makes
+				a paragraph from the p tag, it looks to see if there are any special
+				rules for paragraphs or for that paragraph specifically that the 
+				designer has set in CSS code. 
+			</p>
+			
+		</article>
+		
+		<aside class = "left"></aside>
+		<aside class = "right"></aside>
+		
+		<article> 
+			
+			<p>
+				CSS creates rules for html tags in what are called selectors. If we 
+				wanted to make rules for every paragraph tag that appears in the html 
+				code, we make a p selector. The p selector has a p followed by an open 
+				brace and then somewhere down on a lower line in the program, a closed 
+				brace. Within these two braces we write rules for all the p tags that 
+				appear in our html code. 
+			</p>
+			
+			<p>
+				Here is an example of a p selector: 
+				<p>
+						<tab1>p{</tab1>   <br />                 
+						<tab2>text-align: center;</tab2><br /> 
+						<tab2>color: blue; </tab2> <br /> 
+						<tab1>}</tab1>
+				</p>
+			</p>
+			
+			<p>
+				Here the p selector consists of the braces and everything in them. 
+				If we wanted to make a selector for another tag, for example the h1 
+				tag, we would simply write h1 where p appears here. (h1 is used for writing 
+				headlines in html). The two lines within the selector are declarations. 
+				Declarations are rules that apply to the tag we are modifying. A 
+				declaration has two parts: a property and a value. The first part is the 
+				property. The two properties above are the text-align property and the 
+				color property. The values are center and blue. When we give the text-align
+				property the center value, the text that makes up the tag will be aligned 
+				in the center of the page. And obviously using the color property changes 
+				the color of the text to the specified color value, blue in this case. Each
+				property ends with : and each value ;. : seperates the property from the value
+				and ; ends the declaration so that the browser knows we have a complete rule.
+			</p>
+			
+		</article>
+		
+		<aside class = "left"></aside>
+		<aside class = "right"></aside>
+		
+		
+		<article>
+			<p>
+				If we want to modify a specific paragrah, and not all paragraphs, we can use 
+				an id property. When we declare a p tag in html, we specify the id for that 
+				p tag to some value. We then can make a selector for this specific paragraph 
+				usign this id. 
+				<p>
+				<tab1>p#nameOfParagraph{</tab1><br />
+				<tab2>Enter Declarations here</tab2><br />
+				<tab1>}</tab1>
+				</p>
+				
+				The nameOfParagraph text above is simply a place holder for whatever we named 
+				that paragraph via the id property in the html code. If there is already a 
+				selector for p tags in general, this overides that selector but only for this 
+				specific p tag. Notice also that we use a # mark in between the tag and the 
+				id name with no spaces.
+				
+			</p>
+			</article>
+			
+			<aside class = "right"></aside>
+			<aside class = "left"></aside>
+			
+			<article>
+			<p>
+				The rules we define for a specific tag can only be applied to a single tag in the 
+				html code. If we want to make a set of rules that will apply to more than one 
+				instance of a particular kind of tag we make, but not necessarily all instances
+				of that tag, we can use the class property. We pick a name for the class and use 
+				it in the selector like in the following: 
+				<p>
+				<tab1>.className{</tab1><br />
+				<tab2>Declarations here</tab2><br />
+				<tab1>}</tab1>
+				</p>
+			</p>
+				<p>
+					"className" simply stands for whatever we want to name that class. We use the 
+					same name as here in the html code for the class proprety of any tag we want to 
+					assign this selector to. The class name here is preceded by a dot. This dot does
+					not appear in the html tag when we assign a tag to this class just the className 
+					we chose. The . must however appear here in the selector. Notice one more thing 
+					about the selector. There is no mention of the p tag. We don't specify a tag type
+					here like in other selectors because we are given the choice to apply this class
+					to any tag no matter its type. So you could write a selector and use it for both 
+					p tags and h1 tags. Class selectors, like id selectors, override any more general 
+					tag selector we may have written in the CSS code.
+				</p>
+		</article>
+		
+		
+		<footer></footer>
+		<section id = "block3"></section>
+		<section id = "block4"></section>
+	</body>
+	
+</html>
